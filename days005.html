@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Wajib Diisi</legend>
+            <table>
+                <tr>
+                    <td><label for="nama">Nama Lengkap:</label></td>
+                    <td><input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Masukkan email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="hp">No HP:</label></td>
+                    <td><input type="number" id="hp" name="hp" placeholder="Masukkan nomor HP" required></td>
+                </tr>
+                <tr>
+                    <td><label>Jenis Kelamin:</label></td>
+                    <td>
+                        <input type="radio" id="pria" name="kelamin" value="Pria" required>
+                        <label for="pria">Pria</label>
+                        <input type="radio" id="wanita" name="kelamin" value="Wanita">
+                        <label for="wanita">Wanita</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="alamat">Alamat:</label></td>
+                    <td><textarea id="alamat" name="alamat" placeholder="Masukkan alamat" required></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Opsional</legend>
+            <table>
+                <tr>
+                    <td><label for="kota">Kabupaten:</label></td>
+                    <td>
+                        <select id="kota" name="kota">
+                            <option value="" disabled selected>Pilih Kabupaten</option>
+                            <option value="majene">Majene</option>
+                            <option value="mamuju">Mamuju</option>
+                            <option value="polewali">Polewali</option>
+                            <option value="mamasa">Mamasa</option>
+                            <option value="pasangkayu">Pasangkayu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Hobi:</label></td>
+                    <td>
+                        <input type="checkbox" id="coding" name="hobi" value="coding">
+                        <label for="coding">Coding</label><br>
+                        <input type="checkbox" id="rebahan" name="hobi" value="rebahan">
+                        <label for="rebahan">Rebahan</label><br>
+                        <input type="checkbox" id="nonton" name="hobi" value="nonton">
+                        <label for="nonton">Nonton</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Kirim</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
